@@ -20,6 +20,10 @@ body {
     font-family: 'Kumbh Sans', sans-serif; 
     background-color: var(--dark-cyan);
     min-height: 100vh;
+    background-image: url("./images/bg-pattern-top.svg"),
+        url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -550px left -780px, bottom -630px right -780px;
 }
 
 .flex-center {
@@ -113,4 +117,12 @@ hr {
     font-size: .5rem;
     font-weight: 400;
     color: var(--dark-grayish-blue);
+}
+
+
+
+@media (min-width: 900px) {
+    body {
+        background-position: top -500px left -300px, bottom -570px right -300px;
+    }
 }
